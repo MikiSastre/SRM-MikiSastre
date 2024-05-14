@@ -16,5 +16,10 @@ namespace SimRacingManager
         {
             InitializeComponent();
         }
+
+        private void settingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

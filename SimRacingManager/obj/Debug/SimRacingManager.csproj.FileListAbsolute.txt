@@ -1,0 +1,10 @@
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\SimRacingManager.exe.config
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\SimRacingManager.exe
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\SimRacingManager.pdb
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.csproj.AssemblyReference.cache
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.Form1.resources
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.Properties.Resources.resources
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.csproj.GenerateResource.cache
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.csproj.CoreCompileInputs.cache
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.exe
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.pdb
