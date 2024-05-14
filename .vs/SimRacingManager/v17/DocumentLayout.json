@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|solutionrelative:simracingmanager\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\simracingmanager\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|solutionrelative:simracingmanager\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\simracingmanager\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|solutionrelative:simracingmanager\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\simracingmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|c:\\users\\msastre\\onedrive\\documentos\\srm-mikisastre\\simracingmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|solutionrelative:simracingmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|c:\\users\\msastre\\onedrive\\documentos\\srm-mikisastre\\simracingmanager\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|solutionrelative:simracingmanager\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10B030D6-E9EE-44DC-B14B-FEB21EC241AC}|SimRacingManager\\SimRacingManager.csproj|C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\simracingmanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Form1.cs",
               "RelativeDocumentMoniker": "SimRacingManager\\Form1.cs",
@@ -42,7 +38,8 @@
               "RelativeToolTip": "SimRacingManager\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T16:53:35.547Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -58,39 +55,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Login.cs",
               "RelativeDocumentMoniker": "SimRacingManager\\Login.cs",
               "ToolTip": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Login.cs",
               "RelativeToolTip": "SimRacingManager\\Login.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBMAAAAjAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T17:59:21.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "SimRacingManager\\Login.Designer.cs",
-              "ToolTip": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Login.Designer.cs",
-              "RelativeToolTip": "SimRacingManager\\Login.Designer.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAAAGkAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:33:47.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Form1.cs",
               "RelativeDocumentMoniker": "SimRacingManager\\Form1.cs",
               "ToolTip": "C:\\Users\\msastre\\OneDrive\\Documentos\\SRM-MikiSastre\\SimRacingManager\\Form1.cs",
               "RelativeToolTip": "SimRacingManager\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T17:45:48.199Z"
             }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.labelLogin = new System.Windows.Forms.Label();
             this.labelLoginUsername = new System.Windows.Forms.Label();
             this.txtLoginUsername = new System.Windows.Forms.TextBox();
             this.txtLoginPassword = new System.Windows.Forms.TextBox();
@@ -35,8 +36,18 @@
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.labelLogin = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // labelLogin
+            // 
+            this.labelLogin.AutoSize = true;
+            this.labelLogin.Font = new System.Drawing.Font("MS Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.labelLogin.Location = new System.Drawing.Point(90, 50);
+            this.labelLogin.Name = "labelLogin";
+            this.labelLogin.Size = new System.Drawing.Size(134, 43);
+            this.labelLogin.TabIndex = 0;
+            this.labelLogin.Text = "LOGIN";
             // 
             // labelLoginUsername
             // 
@@ -103,7 +114,6 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnClear
             // 
@@ -117,17 +127,6 @@
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
-            // 
-            // labelLogin
-            // 
-            this.labelLogin.AutoSize = true;
-            this.labelLogin.Font = new System.Drawing.Font("MS Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.labelLogin.Location = new System.Drawing.Point(90, 50);
-            this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(134, 43);
-            this.labelLogin.TabIndex = 0;
-            this.labelLogin.Text = "LOGIN";
             // 
             // frmLogin
             // 
@@ -155,6 +154,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.Label labelLoginUsername;
         private System.Windows.Forms.TextBox txtLoginUsername;
         private System.Windows.Forms.TextBox txtLoginPassword;
@@ -162,6 +163,5 @@
         private System.Windows.Forms.CheckBox checkbxShowPas;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label labelLogin;
     }
 }
