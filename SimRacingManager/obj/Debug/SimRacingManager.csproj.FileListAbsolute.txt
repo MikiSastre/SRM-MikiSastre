@@ -8,3 +8,4 @@ C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\S
 C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.csproj.CoreCompileInputs.cache
 C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.exe
 C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.pdb
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacingManager.frmLogin.resources
