@@ -16,5 +16,21 @@ namespace SimRacingManager
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string username = txtLoginUsername.Text;
+            string password = txtLoginPassword.Text;
+
+            if (username == "admin" && password == "admin")
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid user or password, please try again", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

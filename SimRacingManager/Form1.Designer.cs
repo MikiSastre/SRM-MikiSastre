@@ -68,25 +68,25 @@
             // newCompetitionToolStripMenuItem
             // 
             this.newCompetitionToolStripMenuItem.Name = "newCompetitionToolStripMenuItem";
-            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.newCompetitionToolStripMenuItem.Text = "New competition";
             // 
             // newRecordToolStripMenuItem
             // 
             this.newRecordToolStripMenuItem.Name = "newRecordToolStripMenuItem";
-            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.newRecordToolStripMenuItem.Text = "New record";
             // 
             // importRecordToolStripMenuItem
             // 
             this.importRecordToolStripMenuItem.Name = "importRecordToolStripMenuItem";
-            this.importRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.importRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.importRecordToolStripMenuItem.Text = "Import record";
             // 
             // exportRecordToolStripMenuItem
             // 
             this.exportRecordToolStripMenuItem.Name = "exportRecordToolStripMenuItem";
-            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.exportRecordToolStripMenuItem.Text = "Export record";
             // 
             // settingToolStripMenuItem
@@ -115,6 +115,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "HOME";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
@@ -137,6 +138,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabHome.ResumeLayout(false);

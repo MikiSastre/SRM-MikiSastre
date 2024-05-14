@@ -17,9 +17,32 @@ namespace SimRacingManager
             InitializeComponent();
         }
 
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.StartPosition = FormStartPosition.CenterScreen;
+
+            DialogResult result = frmLogin.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                this.Show();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
         private void settingToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
