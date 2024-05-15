@@ -50,7 +50,8 @@
             this.settingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(832, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(624, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,37 +63,37 @@
             this.importRecordToolStripMenuItem,
             this.exportRecordToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.fileToolStripMenuItem.Text = " File";
             // 
             // newCompetitionToolStripMenuItem
             // 
             this.newCompetitionToolStripMenuItem.Name = "newCompetitionToolStripMenuItem";
-            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.newCompetitionToolStripMenuItem.Text = "New competition";
             // 
             // newRecordToolStripMenuItem
             // 
             this.newRecordToolStripMenuItem.Name = "newRecordToolStripMenuItem";
-            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.newRecordToolStripMenuItem.Text = "New record";
             // 
             // importRecordToolStripMenuItem
             // 
             this.importRecordToolStripMenuItem.Name = "importRecordToolStripMenuItem";
-            this.importRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.importRecordToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.importRecordToolStripMenuItem.Text = "Import record";
             // 
             // exportRecordToolStripMenuItem
             // 
             this.exportRecordToolStripMenuItem.Name = "exportRecordToolStripMenuItem";
-            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.exportRecordToolStripMenuItem.Text = "Export record";
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingToolStripMenuItem.Text = "Settings";
             this.settingToolStripMenuItem.Click += new System.EventHandler(this.settingToolStripMenuItem_Click);
             // 
@@ -100,18 +101,20 @@
             // 
             this.tabHome.Controls.Add(this.tabPage1);
             this.tabHome.Controls.Add(this.tabPage2);
-            this.tabHome.Location = new System.Drawing.Point(12, 31);
+            this.tabHome.Location = new System.Drawing.Point(9, 25);
+            this.tabHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabHome.Name = "tabHome";
             this.tabHome.SelectedIndex = 0;
-            this.tabHome.Size = new System.Drawing.Size(808, 418);
+            this.tabHome.Size = new System.Drawing.Size(606, 340);
             this.tabHome.TabIndex = 1;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(800, 389);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(598, 314);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "HOME";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -119,23 +122,25 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(800, 389);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(598, 314);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "RESULTS";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 461);
+            this.ClientSize = new System.Drawing.Size(624, 375);
             this.Controls.Add(this.tabHome);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
