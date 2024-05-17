@@ -22,7 +22,7 @@ namespace SimRacingManager
             string username = txtLoginUsername.Text;
             string password = txtLoginPassword.Text;
 
-            if (username == "admin" && password == "admin")
+            if (username == "admin" && password == "1234")
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();

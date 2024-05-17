@@ -77,6 +77,7 @@
             this.txtLoginPassword.Location = new System.Drawing.Point(34, 265);
             this.txtLoginPassword.Multiline = true;
             this.txtLoginPassword.Name = "txtLoginPassword";
+            this.txtLoginPassword.PasswordChar = '*';
             this.txtLoginPassword.Size = new System.Drawing.Size(244, 28);
             this.txtLoginPassword.TabIndex = 4;
             // 
