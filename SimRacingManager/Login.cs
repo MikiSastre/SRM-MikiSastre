@@ -32,5 +32,10 @@ namespace SimRacingManager
                 MessageBox.Show("Invalid user or password, please try again", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
