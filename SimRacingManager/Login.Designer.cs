@@ -43,7 +43,7 @@
             this.labelLogin.AutoSize = true;
             this.labelLogin.Font = new System.Drawing.Font("MS Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.labelLogin.Location = new System.Drawing.Point(90, 50);
+            this.labelLogin.Location = new System.Drawing.Point(88, 33);
             this.labelLogin.Name = "labelLogin";
             this.labelLogin.Size = new System.Drawing.Size(134, 43);
             this.labelLogin.TabIndex = 0;
