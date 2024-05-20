@@ -38,7 +38,7 @@
             this.checkbxShowPasRg = new System.Windows.Forms.CheckBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnRegisterClear = new System.Windows.Forms.Button();
-            this.labelHaveAccount = new System.Windows.Forms.Label();
+            this.labelYesAccount = new System.Windows.Forms.Label();
             this.linkToLogin = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -154,26 +154,30 @@
             this.btnRegisterClear.Text = "CLEAR";
             this.btnRegisterClear.UseVisualStyleBackColor = false;
             // 
-            // labelHaveAccount
+            // labelYesAccount
             // 
-            this.labelHaveAccount.AutoSize = true;
-            this.labelHaveAccount.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHaveAccount.Location = new System.Drawing.Point(27, 424);
-            this.labelHaveAccount.Name = "labelHaveAccount";
-            this.labelHaveAccount.Size = new System.Drawing.Size(268, 23);
-            this.labelHaveAccount.TabIndex = 11;
-            this.labelHaveAccount.Text = "Did you already have an account?";
+            this.labelYesAccount.AutoSize = true;
+            this.labelYesAccount.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelYesAccount.Location = new System.Drawing.Point(27, 424);
+            this.labelYesAccount.Name = "labelYesAccount";
+            this.labelYesAccount.Size = new System.Drawing.Size(268, 23);
+            this.labelYesAccount.TabIndex = 11;
+            this.labelYesAccount.Text = "Did you already have an account?";
             // 
             // linkToLogin
             // 
             this.linkToLogin.AutoSize = true;
             this.linkToLogin.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkToLogin.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.linkToLogin.Location = new System.Drawing.Point(101, 457);
             this.linkToLogin.Name = "linkToLogin";
+            this.linkToLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.linkToLogin.Size = new System.Drawing.Size(106, 23);
             this.linkToLogin.TabIndex = 12;
             this.linkToLogin.TabStop = true;
             this.linkToLogin.Text = "Log in here!";
+            this.linkToLogin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.linkToLogin.VisitedLinkColor = System.Drawing.Color.Navy;
             // 
             // frmRegister
             // 
@@ -182,7 +186,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(312, 498);
             this.Controls.Add(this.linkToLogin);
-            this.Controls.Add(this.labelHaveAccount);
+            this.Controls.Add(this.labelYesAccount);
             this.Controls.Add(this.btnRegisterClear);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.checkbxShowPasRg);
@@ -216,7 +220,7 @@
         private System.Windows.Forms.CheckBox checkbxShowPasRg;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnRegisterClear;
-        private System.Windows.Forms.Label labelHaveAccount;
+        private System.Windows.Forms.Label labelYesAccount;
         private System.Windows.Forms.LinkLabel linkToLogin;
     }
 }

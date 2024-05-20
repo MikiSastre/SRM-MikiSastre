@@ -52,7 +52,7 @@
             // labelLoginUsername
             // 
             this.labelLoginUsername.AutoSize = true;
-            this.labelLoginUsername.Location = new System.Drawing.Point(30, 139);
+            this.labelLoginUsername.Location = new System.Drawing.Point(30, 106);
             this.labelLoginUsername.Name = "labelLoginUsername";
             this.labelLoginUsername.Size = new System.Drawing.Size(89, 23);
             this.labelLoginUsername.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.txtLoginUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtLoginUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLoginUsername.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoginUsername.Location = new System.Drawing.Point(34, 178);
+            this.txtLoginUsername.Location = new System.Drawing.Point(34, 145);
             this.txtLoginUsername.Multiline = true;
             this.txtLoginUsername.Name = "txtLoginUsername";
             this.txtLoginUsername.Size = new System.Drawing.Size(244, 28);
@@ -74,7 +74,7 @@
             this.txtLoginPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtLoginPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLoginPassword.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoginPassword.Location = new System.Drawing.Point(34, 265);
+            this.txtLoginPassword.Location = new System.Drawing.Point(34, 232);
             this.txtLoginPassword.Multiline = true;
             this.txtLoginPassword.Name = "txtLoginPassword";
             this.txtLoginPassword.PasswordChar = '*';
@@ -84,7 +84,7 @@
             // labelLoginPassword
             // 
             this.labelLoginPassword.AutoSize = true;
-            this.labelLoginPassword.Location = new System.Drawing.Point(30, 226);
+            this.labelLoginPassword.Location = new System.Drawing.Point(30, 193);
             this.labelLoginPassword.Name = "labelLoginPassword";
             this.labelLoginPassword.Size = new System.Drawing.Size(84, 23);
             this.labelLoginPassword.TabIndex = 3;
@@ -96,7 +96,7 @@
             this.checkbxShowPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkbxShowPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkbxShowPas.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkbxShowPas.Location = new System.Drawing.Point(161, 299);
+            this.checkbxShowPas.Location = new System.Drawing.Point(161, 266);
             this.checkbxShowPas.Name = "checkbxShowPas";
             this.checkbxShowPas.Size = new System.Drawing.Size(117, 21);
             this.checkbxShowPas.TabIndex = 5;
@@ -109,7 +109,7 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(34, 339);
+            this.btnLogin.Location = new System.Drawing.Point(34, 306);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(244, 40);
             this.btnLogin.TabIndex = 6;
@@ -123,7 +123,7 @@
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnClear.Location = new System.Drawing.Point(34, 394);
+            this.btnClear.Location = new System.Drawing.Point(34, 363);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(244, 40);
             this.btnClear.TabIndex = 7;
