@@ -158,6 +158,7 @@
             this.btnRegisterClear.TabIndex = 10;
             this.btnRegisterClear.Text = "CLEAR";
             this.btnRegisterClear.UseVisualStyleBackColor = false;
+            this.btnRegisterClear.Click += new System.EventHandler(this.btnRegisterClear_Click);
             // 
             // labelYesAccount
             // 

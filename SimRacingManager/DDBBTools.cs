@@ -45,5 +45,28 @@ namespace SimRacingManager
             IMongoCollection<T> collection = database.GetCollection<T>(collectionName);
             return await collection.Find(new BsonDocument()).ToListAsync();
         }
+
+        // Metode per verificar que l'usuari i la contrassenya son correctes
+        public async Task<bool> VerifyCredentialsAsync(string username, string password)
+        {
+            IMongoCollection<BsonDocument> collection = database.GetCollection<BsonDocument>("users");
+
+            // Creem un filtre per buscar l'usuari al document
+            var filter = Builders<BsonDocument>.Filter.Eq("username", username);
+
+            // Busquem l'usuari a la colecció
+            BsonDocument user = await collection.Find(filter).FirstOrDefaultAsync();
+
+            if (user != null)
+            {
+                // Comparem la contrassenya
+                string storedPassword = user["password"].AsString;
+
+                // Nota: En un escenario real, asegúrate de comparar contraseñas hasheadas
+                return storedPassword == password;
+            }
+
+            return false;
+        }
     }
 }

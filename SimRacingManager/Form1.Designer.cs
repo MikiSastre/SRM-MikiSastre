@@ -69,8 +69,9 @@
             // newCompetitionToolStripMenuItem
             // 
             this.newCompetitionToolStripMenuItem.Name = "newCompetitionToolStripMenuItem";
-            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.newCompetitionToolStripMenuItem.Text = "New competition";
+            this.newCompetitionToolStripMenuItem.Click += new System.EventHandler(this.newCompetitionToolStripMenuItem_Click);
             // 
             // newRecordToolStripMenuItem
             // 
@@ -142,6 +143,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.menuStrip1.ResumeLayout(false);

@@ -17,19 +17,25 @@ namespace SimRacingManager
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtLoginUsername.Text;
             string password = txtLoginPassword.Text;
 
-            if (username == "admin" && password == "1234")
+            // Creem l'instancia a DDBBTools
+            DDBBTools ddbbTools = new DDBBTools();
+
+            // Verificarem el usuari i contrasenya
+            bool isValidUser = await ddbbTools.VerifyCredentialsAsync(username, password);
+
+            if (isValidUser)
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Invalid user or password, please try again", "ERROR!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username or password incorrect.");
             }
         }
 
@@ -58,6 +64,13 @@ namespace SimRacingManager
                 // Ocultar la contrassenya
                 txtLoginPassword.PasswordChar = '*';
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            // Netejem les dades que hi ha
+            txtLoginUsername.Text = "";
+            txtLoginPassword.Text = "";
         }
     }
 }

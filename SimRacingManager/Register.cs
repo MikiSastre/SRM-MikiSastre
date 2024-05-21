@@ -43,13 +43,13 @@ namespace SimRacingManager
         {
             if (checkbxShowPasRg.Checked)
             {
-                // Mostrar la contrassenya
+                // Mostra la contrassenya
                 txtRegisterPassword.PasswordChar = '\0'; // '\0' indica que no hi ha cap caracter de mascara
                 txtRegisterConfirm.PasswordChar = '\0';
             }
             else
             {
-                // Ocultar la contrassenya
+                // Oculta la contrassenya
                 txtRegisterPassword.PasswordChar = '*';
                 txtRegisterConfirm.PasswordChar = '*';
             }
@@ -82,12 +82,20 @@ namespace SimRacingManager
                 {"password", password}
             };
 
-            //Insertem el document a la collecció users
+            // Insertem el document a la collecció users
             await ddbbTools.InsertDocumentAsync("users", newUser);
 
-            //Mostrem un missatge conforme s'ha creat l'usuari
+            // Mostrem un missatge conforme s'ha creat l'usuari
             MessageBox.Show("Successful registration. Now you can log in.");
             this.Close();
+        }
+
+        private void btnRegisterClear_Click(object sender, EventArgs e)
+        {
+            //Netejarem les dades que hi hagi
+            txtRegisterUsername.Text = "";
+            txtRegisterPassword.Text = "";
+            txtRegisterConfirm.Text = "";
         }
     }
 }

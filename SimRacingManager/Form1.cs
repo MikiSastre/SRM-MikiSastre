@@ -45,5 +45,9 @@ namespace SimRacingManager
 
         }
 
+        private void newCompetitionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
