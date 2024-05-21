@@ -47,7 +47,7 @@
             this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.labelLogin.Location = new System.Drawing.Point(88, 33);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(110, 35);
+            this.labelLogin.Size = new System.Drawing.Size(134, 43);
             this.labelLogin.TabIndex = 0;
             this.labelLogin.Text = "LOGIN";
             // 
@@ -56,7 +56,7 @@
             this.labelLoginUsername.AutoSize = true;
             this.labelLoginUsername.Location = new System.Drawing.Point(30, 106);
             this.labelLoginUsername.Name = "labelLoginUsername";
-            this.labelLoginUsername.Size = new System.Drawing.Size(76, 19);
+            this.labelLoginUsername.Size = new System.Drawing.Size(89, 23);
             this.labelLoginUsername.TabIndex = 1;
             this.labelLoginUsername.Text = "Username";
             // 
@@ -89,7 +89,7 @@
             this.labelLoginPassword.AutoSize = true;
             this.labelLoginPassword.Location = new System.Drawing.Point(30, 193);
             this.labelLoginPassword.Name = "labelLoginPassword";
-            this.labelLoginPassword.Size = new System.Drawing.Size(73, 19);
+            this.labelLoginPassword.Size = new System.Drawing.Size(84, 23);
             this.labelLoginPassword.TabIndex = 3;
             this.labelLoginPassword.Text = "Password";
             // 
@@ -101,10 +101,11 @@
             this.checkbxShowPas.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkbxShowPas.Location = new System.Drawing.Point(161, 266);
             this.checkbxShowPas.Name = "checkbxShowPas";
-            this.checkbxShowPas.Size = new System.Drawing.Size(104, 17);
+            this.checkbxShowPas.Size = new System.Drawing.Size(117, 21);
             this.checkbxShowPas.TabIndex = 5;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
+            this.checkbxShowPas.CheckedChanged += new System.EventHandler(this.checkbxShowPas_CheckedChanged);
             // 
             // btnLogin
             // 
@@ -141,7 +142,7 @@
             this.linkToRegister.Location = new System.Drawing.Point(104, 454);
             this.linkToRegister.Name = "linkToRegister";
             this.linkToRegister.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.linkToRegister.Size = new System.Drawing.Size(103, 19);
+            this.linkToRegister.Size = new System.Drawing.Size(122, 23);
             this.linkToRegister.TabIndex = 14;
             this.linkToRegister.TabStop = true;
             this.linkToRegister.Text = "Register here!";
@@ -155,13 +156,13 @@
             this.labelNoAccount.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNoAccount.Location = new System.Drawing.Point(71, 425);
             this.labelNoAccount.Name = "labelNoAccount";
-            this.labelNoAccount.Size = new System.Drawing.Size(171, 19);
+            this.labelNoAccount.Size = new System.Drawing.Size(213, 23);
             this.labelNoAccount.TabIndex = 13;
             this.labelNoAccount.Text = "You don\'t have an acount?";
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(312, 498);

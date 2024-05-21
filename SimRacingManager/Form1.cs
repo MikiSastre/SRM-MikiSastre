@@ -17,6 +17,7 @@ namespace SimRacingManager
             InitializeComponent();
         }
 
+        
         private void Form1_Load_1(object sender, EventArgs e)
         {
             frmLogin frmLogin = new frmLogin();

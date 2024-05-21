@@ -45,5 +45,19 @@ namespace SimRacingManager
 
             frmRegister.ShowDialog();
         }
+
+        private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkbxShowPas.Checked)
+            {
+                // Mostrar la contrassenya
+                txtLoginPassword.PasswordChar = '\0'; // '\0' indica que no hi ha cap caracter de mascara
+            }
+            else
+            {
+                // Ocultar la contrassenya
+                txtLoginPassword.PasswordChar = '*';
+            }
+        }
     }
 }

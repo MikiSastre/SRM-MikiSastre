@@ -49,7 +49,7 @@
             this.labelRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.labelRegister.Location = new System.Drawing.Point(52, 30);
             this.labelRegister.Name = "labelRegister";
-            this.labelRegister.Size = new System.Drawing.Size(167, 35);
+            this.labelRegister.Size = new System.Drawing.Size(203, 43);
             this.labelRegister.TabIndex = 1;
             this.labelRegister.Text = "REGISTER";
             // 
@@ -58,7 +58,7 @@
             this.labelRegisterUsername.AutoSize = true;
             this.labelRegisterUsername.Location = new System.Drawing.Point(27, 92);
             this.labelRegisterUsername.Name = "labelRegisterUsername";
-            this.labelRegisterUsername.Size = new System.Drawing.Size(76, 19);
+            this.labelRegisterUsername.Size = new System.Drawing.Size(89, 23);
             this.labelRegisterUsername.TabIndex = 2;
             this.labelRegisterUsername.Text = "Username";
             // 
@@ -72,13 +72,14 @@
             this.txtRegisterUsername.Name = "txtRegisterUsername";
             this.txtRegisterUsername.Size = new System.Drawing.Size(244, 28);
             this.txtRegisterUsername.TabIndex = 3;
+            this.txtRegisterUsername.TextChanged += new System.EventHandler(this.txtRegisterUsername_TextChanged);
             // 
             // labelRegisterPassword
             // 
             this.labelRegisterPassword.AutoSize = true;
             this.labelRegisterPassword.Location = new System.Drawing.Point(27, 158);
             this.labelRegisterPassword.Name = "labelRegisterPassword";
-            this.labelRegisterPassword.Size = new System.Drawing.Size(73, 19);
+            this.labelRegisterPassword.Size = new System.Drawing.Size(84, 23);
             this.labelRegisterPassword.TabIndex = 4;
             this.labelRegisterPassword.Text = "Password";
             // 
@@ -93,13 +94,14 @@
             this.txtRegisterPassword.PasswordChar = '*';
             this.txtRegisterPassword.Size = new System.Drawing.Size(244, 28);
             this.txtRegisterPassword.TabIndex = 5;
+            this.txtRegisterPassword.TextChanged += new System.EventHandler(this.txtRegisterPassword_TextChanged);
             // 
             // labelRegisterConfirm
             // 
             this.labelRegisterConfirm.AutoSize = true;
             this.labelRegisterConfirm.Location = new System.Drawing.Point(27, 226);
             this.labelRegisterConfirm.Name = "labelRegisterConfirm";
-            this.labelRegisterConfirm.Size = new System.Drawing.Size(131, 19);
+            this.labelRegisterConfirm.Size = new System.Drawing.Size(155, 23);
             this.labelRegisterConfirm.TabIndex = 6;
             this.labelRegisterConfirm.Text = "Confirm Password";
             // 
@@ -114,6 +116,7 @@
             this.txtRegisterConfirm.PasswordChar = '*';
             this.txtRegisterConfirm.Size = new System.Drawing.Size(244, 28);
             this.txtRegisterConfirm.TabIndex = 7;
+            this.txtRegisterConfirm.TextChanged += new System.EventHandler(this.txtRegisterConfirm_TextChanged);
             // 
             // checkbxShowPasRg
             // 
@@ -123,10 +126,11 @@
             this.checkbxShowPasRg.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkbxShowPasRg.Location = new System.Drawing.Point(158, 286);
             this.checkbxShowPasRg.Name = "checkbxShowPasRg";
-            this.checkbxShowPasRg.Size = new System.Drawing.Size(104, 17);
+            this.checkbxShowPasRg.Size = new System.Drawing.Size(117, 21);
             this.checkbxShowPasRg.TabIndex = 8;
             this.checkbxShowPasRg.Text = "Show Password";
             this.checkbxShowPasRg.UseVisualStyleBackColor = true;
+            this.checkbxShowPasRg.CheckedChanged += new System.EventHandler(this.checkbxShowPasRg_CheckedChanged);
             // 
             // btnSubmit
             // 
@@ -140,6 +144,7 @@
             this.btnSubmit.TabIndex = 9;
             this.btnSubmit.Text = "SUBMIT";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnRegisterClear
             // 
@@ -160,7 +165,7 @@
             this.labelYesAccount.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelYesAccount.Location = new System.Drawing.Point(38, 426);
             this.labelYesAccount.Name = "labelYesAccount";
-            this.labelYesAccount.Size = new System.Drawing.Size(215, 19);
+            this.labelYesAccount.Size = new System.Drawing.Size(268, 23);
             this.labelYesAccount.TabIndex = 11;
             this.labelYesAccount.Text = "Did you already have an account?";
             // 
@@ -172,7 +177,7 @@
             this.linkToLogin.Location = new System.Drawing.Point(101, 457);
             this.linkToLogin.Name = "linkToLogin";
             this.linkToLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.linkToLogin.Size = new System.Drawing.Size(89, 19);
+            this.linkToLogin.Size = new System.Drawing.Size(106, 23);
             this.linkToLogin.TabIndex = 12;
             this.linkToLogin.TabStop = true;
             this.linkToLogin.Text = "Log in here!";
@@ -182,7 +187,7 @@
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(312, 498);
