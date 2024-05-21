@@ -54,7 +54,7 @@
             // labelLoginUsername
             // 
             this.labelLoginUsername.AutoSize = true;
-            this.labelLoginUsername.Location = new System.Drawing.Point(30, 106);
+            this.labelLoginUsername.Location = new System.Drawing.Point(25, 102);
             this.labelLoginUsername.Name = "labelLoginUsername";
             this.labelLoginUsername.Size = new System.Drawing.Size(89, 23);
             this.labelLoginUsername.TabIndex = 1;
@@ -144,7 +144,7 @@
             this.linkToRegister.Name = "linkToRegister";
             this.linkToRegister.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.linkToRegister.Size = new System.Drawing.Size(122, 23);
-            this.linkToRegister.TabIndex = 14;
+            this.linkToRegister.TabIndex = 9;
             this.linkToRegister.TabStop = true;
             this.linkToRegister.Text = "Register here!";
             this.linkToRegister.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,7 +158,7 @@
             this.labelNoAccount.Location = new System.Drawing.Point(71, 425);
             this.labelNoAccount.Name = "labelNoAccount";
             this.labelNoAccount.Size = new System.Drawing.Size(213, 23);
-            this.labelNoAccount.TabIndex = 13;
+            this.labelNoAccount.TabIndex = 8;
             this.labelNoAccount.Text = "You don\'t have an acount?";
             // 
             // frmLogin

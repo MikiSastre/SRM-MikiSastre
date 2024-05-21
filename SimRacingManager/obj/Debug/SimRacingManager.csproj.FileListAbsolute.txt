@@ -65,3 +65,9 @@ C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\S
 C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\obj\Debug\SimRacin.F6178223.Up2Date
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.Text.Json.dll
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.ValueTuple.dll
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.Text.Json.xml
+C:\Users\msastre\OneDrive\Documentos\SRM-MikiSastre\SimRacingManager\bin\Debug\System.ValueTuple.xml

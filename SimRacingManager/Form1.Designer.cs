@@ -32,7 +32,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCompetitionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnImportRecord = new System.Windows.Forms.ToolStripMenuItem();
             this.exportRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabHome = new System.Windows.Forms.TabControl();
@@ -60,7 +60,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newCompetitionToolStripMenuItem,
             this.newRecordToolStripMenuItem,
-            this.importRecordToolStripMenuItem,
+            this.btnImportRecord,
             this.exportRecordToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
@@ -76,19 +76,20 @@
             // newRecordToolStripMenuItem
             // 
             this.newRecordToolStripMenuItem.Name = "newRecordToolStripMenuItem";
-            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.newRecordToolStripMenuItem.Text = "New record";
             // 
-            // importRecordToolStripMenuItem
+            // btnImportRecord
             // 
-            this.importRecordToolStripMenuItem.Name = "importRecordToolStripMenuItem";
-            this.importRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.importRecordToolStripMenuItem.Text = "Import record";
+            this.btnImportRecord.Name = "btnImportRecord";
+            this.btnImportRecord.Size = new System.Drawing.Size(224, 26);
+            this.btnImportRecord.Text = "Import record";
+            this.btnImportRecord.Click += new System.EventHandler(this.btnImportRecord_Click);
             // 
             // exportRecordToolStripMenuItem
             // 
             this.exportRecordToolStripMenuItem.Name = "exportRecordToolStripMenuItem";
-            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exportRecordToolStripMenuItem.Text = "Export record";
             // 
             // settingToolStripMenuItem
@@ -160,7 +161,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newCompetitionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newRecordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importRecordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnImportRecord;
         private System.Windows.Forms.ToolStripMenuItem exportRecordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
         private System.Windows.Forms.TabControl tabHome;

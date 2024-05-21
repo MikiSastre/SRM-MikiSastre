@@ -50,7 +50,7 @@
             this.labelRegister.Location = new System.Drawing.Point(52, 30);
             this.labelRegister.Name = "labelRegister";
             this.labelRegister.Size = new System.Drawing.Size(203, 43);
-            this.labelRegister.TabIndex = 1;
+            this.labelRegister.TabIndex = 0;
             this.labelRegister.Text = "REGISTER";
             // 
             // labelRegisterUsername
@@ -59,7 +59,7 @@
             this.labelRegisterUsername.Location = new System.Drawing.Point(27, 92);
             this.labelRegisterUsername.Name = "labelRegisterUsername";
             this.labelRegisterUsername.Size = new System.Drawing.Size(89, 23);
-            this.labelRegisterUsername.TabIndex = 2;
+            this.labelRegisterUsername.TabIndex = 1;
             this.labelRegisterUsername.Text = "Username";
             // 
             // txtRegisterUsername
@@ -71,7 +71,7 @@
             this.txtRegisterUsername.Multiline = true;
             this.txtRegisterUsername.Name = "txtRegisterUsername";
             this.txtRegisterUsername.Size = new System.Drawing.Size(244, 28);
-            this.txtRegisterUsername.TabIndex = 3;
+            this.txtRegisterUsername.TabIndex = 2;
             this.txtRegisterUsername.TextChanged += new System.EventHandler(this.txtRegisterUsername_TextChanged);
             // 
             // labelRegisterPassword
@@ -80,7 +80,7 @@
             this.labelRegisterPassword.Location = new System.Drawing.Point(27, 158);
             this.labelRegisterPassword.Name = "labelRegisterPassword";
             this.labelRegisterPassword.Size = new System.Drawing.Size(84, 23);
-            this.labelRegisterPassword.TabIndex = 4;
+            this.labelRegisterPassword.TabIndex = 3;
             this.labelRegisterPassword.Text = "Password";
             // 
             // txtRegisterPassword
@@ -93,7 +93,7 @@
             this.txtRegisterPassword.Name = "txtRegisterPassword";
             this.txtRegisterPassword.PasswordChar = '*';
             this.txtRegisterPassword.Size = new System.Drawing.Size(244, 28);
-            this.txtRegisterPassword.TabIndex = 5;
+            this.txtRegisterPassword.TabIndex = 4;
             this.txtRegisterPassword.TextChanged += new System.EventHandler(this.txtRegisterPassword_TextChanged);
             // 
             // labelRegisterConfirm
@@ -102,7 +102,7 @@
             this.labelRegisterConfirm.Location = new System.Drawing.Point(27, 226);
             this.labelRegisterConfirm.Name = "labelRegisterConfirm";
             this.labelRegisterConfirm.Size = new System.Drawing.Size(155, 23);
-            this.labelRegisterConfirm.TabIndex = 6;
+            this.labelRegisterConfirm.TabIndex = 5;
             this.labelRegisterConfirm.Text = "Confirm Password";
             // 
             // txtRegisterConfirm
@@ -115,7 +115,7 @@
             this.txtRegisterConfirm.Name = "txtRegisterConfirm";
             this.txtRegisterConfirm.PasswordChar = '*';
             this.txtRegisterConfirm.Size = new System.Drawing.Size(244, 28);
-            this.txtRegisterConfirm.TabIndex = 7;
+            this.txtRegisterConfirm.TabIndex = 6;
             this.txtRegisterConfirm.TextChanged += new System.EventHandler(this.txtRegisterConfirm_TextChanged);
             // 
             // checkbxShowPasRg
@@ -127,7 +127,7 @@
             this.checkbxShowPasRg.Location = new System.Drawing.Point(158, 286);
             this.checkbxShowPasRg.Name = "checkbxShowPasRg";
             this.checkbxShowPasRg.Size = new System.Drawing.Size(117, 21);
-            this.checkbxShowPasRg.TabIndex = 8;
+            this.checkbxShowPasRg.TabIndex = 7;
             this.checkbxShowPasRg.Text = "Show Password";
             this.checkbxShowPasRg.UseVisualStyleBackColor = true;
             this.checkbxShowPasRg.CheckedChanged += new System.EventHandler(this.checkbxShowPasRg_CheckedChanged);
@@ -141,7 +141,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(31, 313);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(244, 40);
-            this.btnSubmit.TabIndex = 9;
+            this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "SUBMIT";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -155,7 +155,7 @@
             this.btnRegisterClear.Location = new System.Drawing.Point(31, 370);
             this.btnRegisterClear.Name = "btnRegisterClear";
             this.btnRegisterClear.Size = new System.Drawing.Size(244, 40);
-            this.btnRegisterClear.TabIndex = 10;
+            this.btnRegisterClear.TabIndex = 9;
             this.btnRegisterClear.Text = "CLEAR";
             this.btnRegisterClear.UseVisualStyleBackColor = false;
             this.btnRegisterClear.Click += new System.EventHandler(this.btnRegisterClear_Click);
@@ -167,7 +167,7 @@
             this.labelYesAccount.Location = new System.Drawing.Point(38, 426);
             this.labelYesAccount.Name = "labelYesAccount";
             this.labelYesAccount.Size = new System.Drawing.Size(268, 23);
-            this.labelYesAccount.TabIndex = 11;
+            this.labelYesAccount.TabIndex = 10;
             this.labelYesAccount.Text = "Did you already have an account?";
             // 
             // linkToLogin
@@ -179,7 +179,7 @@
             this.linkToLogin.Name = "linkToLogin";
             this.linkToLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.linkToLogin.Size = new System.Drawing.Size(106, 23);
-            this.linkToLogin.TabIndex = 12;
+            this.linkToLogin.TabIndex = 11;
             this.linkToLogin.TabStop = true;
             this.linkToLogin.Text = "Log in here!";
             this.linkToLogin.TextAlign = System.Drawing.ContentAlignment.TopCenter;

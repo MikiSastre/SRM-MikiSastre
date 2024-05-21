@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Amazon.Runtime.Documents;
 
+using System.IO;
+using System.Windows.Forms;
+using System.Text.Json;
 //Connexió MongoDB
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -38,14 +41,7 @@ namespace SimRacingManager
             IMongoCollection<T> collection = database.GetCollection<T>(collectionName);
             await collection.InsertOneAsync(document);
         }
-
-        // Metode per obtenir tots els d'una colecció
-        public async Task<List<T>> GetDocumentsAsync<T>(string collectionName)
-        {
-            IMongoCollection<T> collection = database.GetCollection<T>(collectionName);
-            return await collection.Find(new BsonDocument()).ToListAsync();
-        }
-
+      
         // Metode per verificar que l'usuari i la contrassenya son correctes
         public async Task<bool> VerifyCredentialsAsync(string username, string password)
         {
@@ -67,6 +63,42 @@ namespace SimRacingManager
             }
 
             return false;
+        }
+
+        public async Task InsertRaceDataFromJsonAsync(string filePath)
+        {
+            // Leer el 
+            string jsonString = File.ReadAllText(filePath);
+
+            // Deserializar el JSON en una instancia de RaceData
+            RaceData raceData = JsonSerializer.Deserialize<RaceData>(jsonString);
+
+            // Insertar la información principal de la carrera
+            await InsertDocumentAsync("Races", raceData);
+
+            // Insertar los jugadores en la colección "Players"
+            foreach (var player in raceData.players)
+            {
+                await InsertDocumentAsync("Players", player);
+            }
+
+            // Insertar las sesiones en la colección "Sessions"
+            foreach (var session in raceData.sessions)
+            {
+                await InsertDocumentAsync("Sessions", session);
+
+                // Insertar las vueltas de cada sesión en la colección "Laps"
+                foreach (var lap in session.laps)
+                {
+                    await InsertDocumentAsync("Laps", lap);
+                }
+            }
+
+            // Insertar los extras en la colección "Extras"
+            foreach (var extra in raceData.extras)
+            {
+                await InsertDocumentAsync("Extras", extra);
+            }
         }
     }
 }
