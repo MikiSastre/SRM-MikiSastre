@@ -16,5 +16,10 @@ namespace SimRacingManager
         {
             InitializeComponent();
         }
+
+        private void linkToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

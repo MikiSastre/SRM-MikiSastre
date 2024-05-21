@@ -37,5 +37,13 @@ namespace SimRacingManager
         {
 
         }
+
+        private void linkToRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegister frmRegister = new frmRegister();
+            frmRegister.StartPosition = FormStartPosition.CenterScreen;
+
+            frmRegister.ShowDialog();
+        }
     }
 }
