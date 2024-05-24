@@ -57,8 +57,6 @@ namespace SimRacingManager
             {
                 // Comparem la contrassenya
                 string storedPassword = user["password"].AsString;
-
-                // Nota: En un escenario real, asegúrate de comparar contraseñas hasheadas
                 return storedPassword == password;
             }
 
@@ -67,34 +65,34 @@ namespace SimRacingManager
 
         public async Task InsertRaceDataFromJsonAsync(string filePath)
         {
-            // Leer el 
+            // Leer el documento JSON
             string jsonString = File.ReadAllText(filePath);
 
-            // Deserializar el JSON en una instancia de RaceData
+            // Convertir el JSON amb l'instancia de RaceData
             RaceData raceData = JsonSerializer.Deserialize<RaceData>(jsonString);
 
-            // Insertar la información principal de la carrera
+            // Inserta l'información principal de la carrera
             await InsertDocumentAsync("Races", raceData);
 
-            // Insertar los jugadores en la colección "Players"
+            // Inserta els jugadors a la colecció "Players"
             foreach (var player in raceData.players)
             {
                 await InsertDocumentAsync("Players", player);
             }
 
-            // Insertar las sesiones en la colección "Sessions"
+            // Inserta les sessions a la colecció "Sessions"
             foreach (var session in raceData.sessions)
             {
                 await InsertDocumentAsync("Sessions", session);
 
-                // Insertar las vueltas de cada sesión en la colección "Laps"
+                // Inserta les voltes de cada sessió en la colecció "Laps"
                 foreach (var lap in session.laps)
                 {
                     await InsertDocumentAsync("Laps", lap);
                 }
             }
 
-            // Insertar los extras en la colección "Extras"
+            // Insertar els extras a la colecció "Extras"
             foreach (var extra in raceData.extras)
             {
                 await InsertDocumentAsync("Extras", extra);

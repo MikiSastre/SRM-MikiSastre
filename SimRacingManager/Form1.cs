@@ -52,27 +52,27 @@ namespace SimRacingManager
 
         private async void btnImportRecord_Click(object sender, EventArgs e)
         {
-            // Crear una instancia de OpenFileDialog
+            // Crea una instancia de OpenFileDialog
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                // Configurar las propiedades del cuadro de diálogo
+                // Configura les propietats del quadre de dialeg
                 Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
                 Title = "Select a JSON file"
             };
 
-            // Mostrar el cuadro de diálogo y verificar si el usuario selecciona un archivo
+            // Mostra el quadre de dialeg i verifica si l'usuari selecciona un arxiu
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // Obtener la ruta del archivo seleccionado
+                // Obtenir la ruta del arxiu seleccionat
                 string filePath = openFileDialog.FileName;
 
-                // Crear una instancia de DDBBTools
+                // Crea una instancia de DDBBTools
                 DDBBTools ddbbTools = new DDBBTools();
 
-                // Insertar los datos de la carrera desde el archivo JSON a la base de datos
+                // Inserta les dades de la carrera  des del arxiu JSON a la base de dades
                 await ddbbTools.InsertRaceDataFromJsonAsync(filePath);
 
-                MessageBox.Show("Datos importados exitosamente.");
+                MessageBox.Show("Dades importades correctament.");
             }
         }
         

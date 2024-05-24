@@ -38,8 +38,11 @@
             this.tabHome = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.tabHome.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -69,27 +72,27 @@
             // newCompetitionToolStripMenuItem
             // 
             this.newCompetitionToolStripMenuItem.Name = "newCompetitionToolStripMenuItem";
-            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newCompetitionToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.newCompetitionToolStripMenuItem.Text = "New competition";
             this.newCompetitionToolStripMenuItem.Click += new System.EventHandler(this.newCompetitionToolStripMenuItem_Click);
             // 
             // newRecordToolStripMenuItem
             // 
             this.newRecordToolStripMenuItem.Name = "newRecordToolStripMenuItem";
-            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.newRecordToolStripMenuItem.Text = "New record";
             // 
             // btnImportRecord
             // 
             this.btnImportRecord.Name = "btnImportRecord";
-            this.btnImportRecord.Size = new System.Drawing.Size(224, 26);
+            this.btnImportRecord.Size = new System.Drawing.Size(207, 26);
             this.btnImportRecord.Text = "Import record";
             this.btnImportRecord.Click += new System.EventHandler(this.btnImportRecord_Click);
             // 
             // exportRecordToolStripMenuItem
             // 
             this.exportRecordToolStripMenuItem.Name = "exportRecordToolStripMenuItem";
-            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exportRecordToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.exportRecordToolStripMenuItem.Text = "Export record";
             // 
             // settingToolStripMenuItem
@@ -124,6 +127,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
@@ -132,6 +136,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "RESULTS";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 50);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1348, 696);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -150,6 +164,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabHome.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,6 +183,7 @@
         private System.Windows.Forms.TabControl tabHome;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

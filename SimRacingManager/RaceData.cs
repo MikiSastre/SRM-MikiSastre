@@ -31,7 +31,7 @@ namespace SimRacingManager
         public int duration { get; set; }
         public List<Lap> laps { get; set; }
         public int[] lapstotal { get; set; }
-        public List<object> bestLaps { get; set; }
+        public List<BestLap> bestLaps { get; set; }
     }
 
     public class Extra
@@ -49,5 +49,12 @@ namespace SimRacingManager
         public List<Player> players { get; set; }
         public List<Session> sessions { get; set; }
         public List<Extra> extras { get; set; }
+    }
+    public class BestLap
+    {
+        public int car { get; set; }
+        public int time { get; set; }
+        public int lap { get; set; }
+
     }
 }
