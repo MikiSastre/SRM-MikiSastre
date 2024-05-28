@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace SimRacingManager
 {
@@ -44,17 +46,20 @@ namespace SimRacingManager
 
     public class RaceData
     {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public ObjectId _id { get; set; }
         public string track { get; set; }
         public int number_of_sessions { get; set; }
         public List<Player> players { get; set; }
         public List<Session> sessions { get; set; }
         public List<Extra> extras { get; set; }
     }
+
     public class BestLap
     {
         public int car { get; set; }
         public int time { get; set; }
         public int lap { get; set; }
-
     }
 }

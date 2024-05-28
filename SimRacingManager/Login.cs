@@ -72,5 +72,18 @@ namespace SimRacingManager
             txtLoginUsername.Text = "";
             txtLoginPassword.Text = "";
         }
+
+        private void txtLoginPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLoginPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
     }
 }

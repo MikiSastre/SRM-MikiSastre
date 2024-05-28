@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SimRacingManager
 {
-    public partial class Form1 : Form
+    public partial class SimRacingManager : Form
     {
-        public Form1()
+        public SimRacingManager()
         {
             InitializeComponent();
         }
@@ -75,6 +76,42 @@ namespace SimRacingManager
                 MessageBox.Show("Dades importades correctament.");
             }
         }
-        
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void defineExportRouteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Crea una instancia de FolderBrowserDialog
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog()
+            {
+                Description = "Select a folder to send the exported files"
+            }; 
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                string folderExportPath = folderBrowserDialog.SelectedPath;
+                ProgramData.exportFolder = folderExportPath;
+            }
+        }
+
+        private async void exportRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DDBBTools ddbbTools = new DDBBTools();
+            await ddbbTools.GetRaceData();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        public async void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DDBBTools ddbbTools = new DDBBTools();
+            await ddbbTools.ShowDataGrid(dataGridView1);
+        }
     }
 }

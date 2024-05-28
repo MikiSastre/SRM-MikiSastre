@@ -13,6 +13,11 @@ using System.Text.Json;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Core.Configuration;
+using SharpCompress.Writers;
+using System.Diagnostics;
+using SharpCompress.Common;
+using System.ComponentModel;
+using MongoDB.Driver.Linq;
 
 namespace SimRacingManager
 {
@@ -98,5 +103,45 @@ namespace SimRacingManager
                 await InsertDocumentAsync("Extras", extra);
             }
         }
+
+        public async Task GetRaceData()
+        {
+            IMongoCollection<RaceData> racesCollection = database.GetCollection<RaceData>("Races");
+            List<RaceData> racesList = racesCollection.Find(FilterDefinition<RaceData>.Empty).ToList();
+
+            string pathName = ProgramData.exportFolder + "\\" + "Races.csv";
+            using (StreamWriter writer = new StreamWriter(pathName))
+            {
+                // Li posem un titol a cada casella del .csv
+                writer.WriteLine("ID,track,number_of_sessions,players,sessions,extras");
+
+                // Recorre i escriu cada casella al csv
+                foreach (var raceData in racesList)
+                {
+                    string players = JsonSerializer.Serialize(raceData.players);
+                    string sessions = JsonSerializer.Serialize(raceData.sessions);
+                    string extras = JsonSerializer.Serialize(raceData.extras);
+
+                    writer.WriteLine($"{raceData._id},{raceData.track},{raceData.number_of_sessions},\"{players}\",\"{sessions}\",\"{extras}\"");
+                }
+            }
+        }
+
+        public async Task ShowDataGrid()
+        {
+            IMongoCollection<RaceData> racesCollection = database.GetCollection<RaceData>("RaceData");
+            List<RaceData> dataList = racesCollection.Find(FilterDefinition<RaceData>.Empty).ToList();
+
+            foreach (var raceData in dataList)
+            {
+                dataList.Add(raceData);
+
+                string[] row1 = new string[] { raceData._id.ToString() };
+                string[] row2 = new string[] { raceData.track.ToString() };
+                string[] row3 = new string[] { raceData.number_of_sessions.ToString() };
+            }
+        }
     }
-}
+}   
+
+

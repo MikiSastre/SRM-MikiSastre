@@ -1,0 +1,54 @@
+
+{
+	"track": "mugello",
+	"number_of_sessions": 1,
+	"players": [
+		{
+			"name": "Miki",
+			"car": "ks_mazda_mx5_cup",
+			"skin": "00_official"
+		}],
+	"sessions": [
+		{
+			"event": 0,
+			"name": "Hotlap",
+			"type": 4,
+			"lapsCount": 0,
+			"duration": 30,
+			"laps": [
+				{
+					"lap": 0,
+					"car": 0,
+					"sectors": [42570, 46853, 68994],
+					"time": 158417,
+					"cuts": 0,
+					"tyre": "H"
+				}, 
+				{
+					"lap": 1,
+					"car": 0,
+					"sectors": [41857, 50729, 84190],
+					"time": -1,
+					"cuts": 3,
+					"tyre": "H"
+				}],
+			"lapstotal": [2],
+			"bestLaps": [
+				{
+					"car": 0,
+					"time": 158417,
+					"lap": 0
+				}]
+		}],
+	"extras": [
+		{
+			"name": "special_event",
+			"guid": "",
+			"max": 0,
+			"tier": -1
+		}, 
+		{
+			"name": "bestlap",
+			"time": 158417
+		}]
+}
