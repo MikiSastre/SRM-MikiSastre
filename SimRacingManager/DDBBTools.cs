@@ -52,7 +52,7 @@ namespace SimRacingManager
         // Metode per verificar que l'usuari i la contrassenya son correctes
         public async Task<bool> VerifyCredentialsAsync(string username, string password)
         {
-            IMongoCollection<BsonDocument> collection = database.GetCollection<BsonDocument>("users");
+            IMongoCollection<BsonDocument> collection = database.GetCollection<BsonDocument>("Users");
 
             // Creem un filtre per buscar l'usuari al document
             var filter = Builders<BsonDocument>.Filter.Eq("username", username);

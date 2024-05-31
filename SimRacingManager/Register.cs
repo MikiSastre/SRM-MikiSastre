@@ -83,7 +83,7 @@ namespace SimRacingManager
             };
 
             // Insertem el document a la collecció users
-            await ddbbTools.InsertDocumentAsync("users", newUser);
+            await ddbbTools.InsertDocumentAsync("Users", newUser);
 
             // Mostrem un missatge conforme s'ha creat l'usuari
             MessageBox.Show("Successful registration. Now you can log in.");

@@ -40,14 +40,14 @@ namespace SimRacingManager
 
             DialogResult result = frmLogin.ShowDialog();
 
-            //if (result == DialogResult.OK)
-            //{
+            if (result == DialogResult.OK)
+            {
                 this.Show();
-            //}
-            //else
-            //{
-            //    Application.Exit();
-            //}
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
         private void settingToolStripMenuItem_Click(object sender, EventArgs e)
@@ -376,28 +376,30 @@ namespace SimRacingManager
 
         private async void comboBoxSubMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<RaceData> races = await ddbbTools.GetRaceData();
-            ComboBox comboBox = sender as ComboBox;
-
-            RaceData race = races.First(r => r._id.ToString().Equals(comboBoxRaceId.SelectedItem.ToString()));
-            if (subMenuSelectedType.Equals("Players"))
+            try
             {
-                Player player = race.players.First(p => p.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
-                List<string> datos = new List<string>()
+                List<RaceData> races = await ddbbTools.GetRaceData();
+                ComboBox comboBox = sender as ComboBox;
+
+                RaceData race = races.First(r => r._id.ToString().Equals(comboBoxRaceId.SelectedItem.ToString()));
+                if (subMenuSelectedType.Equals("Players"))
+                {
+                    Player player = race.players.First(p => p.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
+                    List<string> datos = new List<string>()
                 {
                     "Name: " + player.name,
                     "Car: " + player.car,
                     "Skin: " + player.skin
                 };
-                listBoxSubMenu.DataSource = datos;
-            }
-            else
-            {
-                if (subMenuSelectedType.Equals("Sessions"))
+                    listBoxSubMenu.DataSource = datos;
+                }
+                else
                 {
-                    
-                    Session session = race.sessions.First(s => s.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
-                    List<string> datos = new List<string>()
+                    if (subMenuSelectedType.Equals("Sessions"))
+                    {
+
+                        Session session = race.sessions.First(s => s.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
+                        List<string> datos = new List<string>()
                     {
                         "Name: " + session.name,
                         "Type: " + Convert.ToString(session.type),
@@ -407,23 +409,28 @@ namespace SimRacingManager
                         "Total laps: " + String.Join(", ", session.lapstotal),
                         "Best laps"
                     };
-                    listBoxSubMenu.DataSource = datos;
-                }
-                else
-                {
-                    if (subMenuSelectedType.Equals("Extras"))
+                        listBoxSubMenu.DataSource = datos;
+                    }
+                    else
                     {
-                        Extra extra = race.extras.First(ex => ex.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
-                        List<string> datos = new List<string>()
+                        if (subMenuSelectedType.Equals("Extras"))
+                        {
+                            Extra extra = race.extras.First(ex => ex.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
+                            List<string> datos = new List<string>()
                         {
                             "Name: " + extra.name,
                             "GUID: " + extra.guid,
                             "Max: " + Convert.ToString(extra.max),
                             "Tier: " + Convert.ToString(extra.tier)
                         };
-                        listBoxSubMenu.DataSource = datos;
+                            listBoxSubMenu.DataSource = datos;
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error to load the race data: " + ex.Message);
             }
         }
 
@@ -433,15 +440,17 @@ namespace SimRacingManager
 
         private async void comboBoxSubMenu2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<RaceData> races = await ddbbTools.GetRaceData();
-            ComboBox comboBox = sender as ComboBox;
-
-            RaceData race = races.First(r => r._id.ToString().Equals(comboBoxRaceId.SelectedItem.ToString()));
-            if (subMenuSelectedType.Equals("Sessions") && subMenu2SelectedType.Equals("Laps"))
+            try
             {
-                Session session = race.sessions.First(p => p.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
-                Lap lap = session.laps.First(l => Convert.ToString(l.lap).Equals(comboBoxSubMenu2.SelectedItem.ToString()));
-                List<string> datos = new List<string>()
+                List<RaceData> races = await ddbbTools.GetRaceData();
+                ComboBox comboBox = sender as ComboBox;
+
+                RaceData race = races.First(r => r._id.ToString().Equals(comboBoxRaceId.SelectedItem.ToString()));
+                if (subMenuSelectedType.Equals("Sessions") && subMenu2SelectedType.Equals("Laps"))
+                {
+                    Session session = race.sessions.First(p => p.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
+                    Lap lap = session.laps.First(l => Convert.ToString(l.lap).Equals(comboBoxSubMenu2.SelectedItem.ToString()));
+                    List<string> datos = new List<string>()
                 {
                     "Lap: " + Convert.ToString(lap.lap),
                     "Car: " + Convert.ToString(lap.car),
@@ -450,22 +459,27 @@ namespace SimRacingManager
                     "Cuts: " + Convert.ToString(lap.cuts),
                     "Tyre: " + lap.tyre
                 };
-                listBoxSubMenu2.DataSource = datos;
-            }
-            else
-            {
-                if (subMenuSelectedType.Equals("Sessions") && subMenu2SelectedType.Equals("Best laps"))
+                    listBoxSubMenu2.DataSource = datos;
+                }
+                else
                 {
-                    Session session = race.sessions.First(p => p.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
-                    BestLap bestLap = session.bestLaps.First(l => Convert.ToString(l.car).Equals(comboBoxSubMenu2.SelectedItem.ToString()));
-                    List<string> datos = new List<string>()
+                    if (subMenuSelectedType.Equals("Sessions") && subMenu2SelectedType.Equals("Best laps"))
+                    {
+                        Session session = race.sessions.First(p => p.name.Equals(comboBoxSubMenu.SelectedItem.ToString()));
+                        BestLap bestLap = session.bestLaps.First(l => Convert.ToString(l.car).Equals(comboBoxSubMenu2.SelectedItem.ToString()));
+                        List<string> datos = new List<string>()
                     {
                         "Car: " + Convert.ToString(bestLap.car),
                         "Time: " + Convert.ToString(bestLap.time),
                         "Lap: " + String.Join(", ", bestLap.lap)
                     };
-                    listBoxSubMenu2.DataSource = datos;
+                        listBoxSubMenu2.DataSource = datos;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error to load the race data: " + ex.Message);
             }
         }
     }
